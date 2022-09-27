@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jmdxq_1e7^e%_(fu8kwt0*0z7yn6g6%-@ejtma^hq+lliuul#5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # Setting this to False will not give you error in the site. Instead redirects to 404 page when given allowed hosts below as well.
 
 CSRF_TRUSTED_ORIGINS = [
