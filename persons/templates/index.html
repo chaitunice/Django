@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <title>Chaitu Persons site</title>
+        <link rel="stylesheet" href="{% static '/cssfiles/button.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 <body>
 
@@ -22,14 +26,19 @@
         {% for i in data %}
         <!-- Showing the cycle tag below -->
         <tr style="background-color: {% cycle '#00FFFF' '#C0C0C0' %};">
-            <td> <a href="update/{{ i.id }}"> {{ i.id }} </a> </td>
+            <td class="cell-edit"> <a href="update/{{ i.id }}"> {{ i.id }} </a></td>
             <td> {{ i.fname }} </td>
             <td> {{ i.lname }} </td>
-            <td> <a href="delete/{{ i.id }}">Delete</a> </td>
+            <td> <a href="delete/{{ i.id }}">
+                    <button class="btn"><span class="fa fa-trash"></span></button>
+                </a> 
+            </td>
         </tr>
         {% endfor %}
     </table>
-       <p><a href="add/">Add Person</a></p>
+       <p><a href="add/">
+            <button class="button-5">Add Person</button>
+            </a></p>
   
 </p>
 </body>
