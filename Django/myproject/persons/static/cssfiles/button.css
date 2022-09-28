@@ -12,14 +12,14 @@
 }
 
 .cell-edit {
-  background-color: inherit;
+  background-color: red;
+  color: #fa6400;
   padding: 5px;
-  font-size: 16px;
   cursor: pointer;
   }
 
 /* On mouse-over */
-.cell-edit:hover {background: #eee;}
+.cell-edit:hover {background: rgb(220, 162, 18);}
 
 
 a {
@@ -48,7 +48,7 @@ a {
   text-decoration: none;
   transition: all 250ms;
   user-select: none;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
