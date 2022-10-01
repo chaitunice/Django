@@ -28,7 +28,7 @@ DEBUG = False
 # Setting this to False will not give you error in the site. Instead redirects to 404 page when given allowed hosts below as well.
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://djangopersons.azurewebsites.net'
+    'https://djangopersonsapp.azurewebsites.net/'
 ]
 ALLOWED_HOSTS = ['*']
 # For 404.html to work, you need to set Debug to False andd allowed host to the above IP
@@ -134,6 +134,7 @@ STATIC_URL = '/static/'
 
 # print('Base dir:', BASE_DIR)
 # print('Static URL:', STATIC_URL)
+# print('Static root:', STATIC_ROOT)
 # print('Static dir is: ', STATICFILES_DIRS)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
