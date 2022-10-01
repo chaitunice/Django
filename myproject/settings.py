@@ -28,7 +28,7 @@ DEBUG = False
 # Setting this to False will not give you error in the site. Instead redirects to 404 page when given allowed hosts below as well.
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://djangopersons.azurewebsites.net'
+    'https://djangopersonsapp.azurewebsites.net'
 ]
 ALLOWED_HOSTS = ['*']
 # For 404.html to work, you need to set Debug to False andd allowed host to the above IP
